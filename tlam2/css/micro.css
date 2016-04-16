@@ -1,0 +1,247 @@
+/* MICRO SITE CSS */
+@font-face {
+    font-family: 'Cicle_Semi';
+    src: url('../fonts/Cicle_Semi-webfont.eot');
+    src: url('../fonts/Cicle_Semi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cicle_Semi-webfont.woff') format('woff'),
+         url('../fonts/Cicle_Semi-webfont.ttf') format('truetype'),
+         url('../fonts/Cicle_Semi-webfont.svg#sofia_pro_lightregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+body, h1, h2, h3, h4 {font-family: "Century Gothic W02"; letter-spacing: 0px;} /*Century Gothic W02*/
+#container1, #container2, #container3, 
+#container4, #container5, #container6, 
+#container7, #container8, #container9, 
+#container10, #container11, #container12 {
+   display:none;
+   overflow:hidden;
+}
+
+/* MENU DRAWER */
+#menudrawer{
+  position: absolute;
+  width:600px;
+  height:100%;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,.7);
+  padding: 20px;
+  z-index: 100;
+}
+#menudrawer div.menu.sub {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background-color: #202324;
+	z-index: -1;
+	width: 500px;
+	border: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+#menudrawer div.menu {
+	height: 100%;
+	position: absolute;
+	border-right: 1px solid rgba(0,0,0,.35);
+}
+.video-nav {
+	width: 100%;
+	height: 50px;
+	margin-top: 5px;
+	padding:0;
+	background-image: -moz-linear-gradient(right, rgba(24,24,24,.7) 0%, rgba(40,40,40,.7) 100%);
+	background-image: -o-linear-gradient(right, rgba(24,24,24,.7) 0%, rgba(40,40,40,.7) 100%);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(24,24,24,.7)), color-stop(1, rgba(40,40,40,.7)));
+	background-image: -webkit-linear-gradient(right, rgba(24,24,24,.7) 0%, rgba(40,40,40,.7) 100%);
+	background-image: linear-gradient(to left, rgba(24,24,24,.7) 0%, rgba(40,40,40,.7) 100%);
+}
+.video-nav ul {text-align: center;padding:0;}
+.video-nav  li {
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 12px;
+	padding-left: 12px;
+	text-transform: uppercase;
+}
+.video-nav a, .microclip a {
+	line-height: 2.2em;
+	color: #ff5428;
+	-webkit-transition: color 0.1s ease-in;
+	text-decoration: none;
+}
+.video-nav li.active, .video-nav a:hover, .microclip a:active, .microclip a:hover {color: #acaaaa;}
+.video-nav h4 {font-size: 20px;margin: 6px 0;line-height:30pt;}
+.block {
+	position:fixed;
+	text-align:center;
+	height: 583px;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin: auto;
+}
+
+#microsite {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  background-color:#333;
+  top:0px;
+  left:0px;
+  z-index:-1;
+  background-image: url('../images/TLM2-micro-bg.jpg');
+}
+
+#microplayer .sp-video {margin-bottom: 0;}
+.sp-video {text-align: center;}
+#player {width: 100%;}
+#micro-MT {
+  position: relative;
+  float:right;
+  background: url("../images/TLM2-micro-MT.png") no-repeat;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 45%;
+  height: 70px;
+  margin-left:0;
+  margin-right:10px;
+  top:8px;
+}
+
+#micro-logo {
+  position: relative;
+  width: 45%;
+  background-position: top left;
+  height:70px;
+  background: url("images/seismic-logo-300.png") no-repeat;
+  background-size: contain;
+  float: left;
+  margin-top:7px;
+  margin-right:10px;
+}
+  
+#micro-title {
+  position: relative;
+  width: auto;
+  font-size: 20pt;
+  clear:both;
+}
+
+#micro-title h1 {
+  color: #fff !important;
+  margin-bottom: 0 !important;
+  line-height:60px;
+}
+
+
+
+#microsite .sp-video {top: 15px;position: relative;}
+  
+#microplayer, #microthumbs {
+	background: rgba(0,0,0,.5);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid #3d3d3d;
+	width: 960px;
+	padding: 5px;
+	vertical-align:middle;
+	display: inline-block;
+}
+
+/*#microplayer, #microthumbs {min-height:560px;}*/
+#microplayer {display:none;}
+#micro-nav img{max-width: 190px;margin: 0px;}
+#micro-nav {
+  position: relative;
+  height: auto;
+  margin-top:0px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+  
+#micro-nav .w80 {width: 80%}
+#micro-nav .w70 {width: 70%}
+#micro-nav .w100 {width: 100%}
+
+.microclip {
+  text-transform: uppercase;
+  text-align:center;
+  display: inline-block;
+}
+
+.microclip a{display:inline;}
+
+.microclip h4 {
+  font-size: 9pt;
+  line-height: 12pt;
+  background-color: rgba(0,0,0,.5);
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding: 5px;
+}
+  
+.microclip img {border: 1px solid #ccc;}
+
+#microplayer > .closebutton {
+	position:absolute;
+	width:50px;
+	margin-top: -4px;
+	margin-left: 908px;
+}
+
+#player {height: 484px;width: 100%;}
+
+iframe, .fallback {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	overflow: hidden;
+}
+
+.w80 {width: 80%}
+.w70 {width: 70%}
+.w100 {width: 100%}
+
+<!--/*TABLET + --------------------------*/-->
+@media only screen and (min-width: 961px) {
+  #micro-title h1 {font-size: 18pt;}
+}
+  
+<!--/*TABLET-----------------------------*/-->
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  #micro-title h1 {font-size: 22pt;}
+  #micro-nav {width: 100%;}
+  #player {height: 380px;}
+  #microplayer, #microthumbs {width: 90%; height:auto;}
+  #micro-nav img{max-width: 160px;margin: 0px;}
+  .block {height: auto;}
+  #microplayer > .closebutton {margin-left: 85%;}
+}
+}
+  
+<!--/*PHONE-----------------------------*/-->
+@media (min-width: 300px) and (max-width: 480px) {
+  #micro-title h1 {font-size: 16pt;}
+  .microclip h4 {font-size: 8pt;}
+  #microplayer, #microthumbs {width: 100%;}
+  #micro-nav img {width: 130px;}
+  #micro-nav {width: 100%;padding: 2px;}
+  #player {height: 180px;}
+  #micro-logo, #microplayer .sp-video #production-title {height: 40px;}
+}
+
+#spot-titles {width:100%;}
+

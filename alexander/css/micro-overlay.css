@@ -1,0 +1,260 @@
+/* MICRO SITE CSS */
+
+#rt-top {display: none !important;}
+body, h1, h2, h3, h4 {font-family: "Century Gothic W02";}
+
+#container1, #container2, #container3, #container4, 
+#container5, #container6, #container7, #container8, 
+#container9, #container10, #container11, #container12 {
+    display:none;
+    overflow:hidden;
+  }
+
+/* MENU DRAWER */
+#menubutton {
+	/*background: url('images/menu-button.png') no-repeat;*/
+	width:50px;
+	height:50px;
+	position:absolute;
+	right:50px;
+	top:10px;
+}
+
+#menudrawer{
+  position: fixed;
+  width:100%;
+  height:400px;
+  bottom:0;
+  left:0;
+  background-color: rgba(0,0,0,.7);
+  padding: 20px;
+  z-index: 100;
+}
+
+#menudrawer div.menu.sub {
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+z-index: -1;
+width: 100%;
+border: 0;
+overflow-x: hidden;
+overflow-y: scroll;
+-webkit-overflow-scrolling: touch;
+}
+
+#menudrawer div.menu {
+height: 100%;
+position: absolute;
+border-right: 1px solid rgba(0,0,0,.35);
+}
+
+#menudrawer div.menu.sub::-webkit-scrollbar {
+width: 8px;
+border: 0;
+border-left: 1px solid rgba(0,0,0,.15);
+background: rgba(0,0,0,.35);
+}
+
+.video-nav {
+	width: 100%;
+	height: 50px;
+	margin-top: 5px;
+	padding:0;
+	letter-spacing:-2px;
+	background-image: -moz-linear-gradient(right, rgba(24,24,24,.7) 0%, rgba(40,40,40,.7) 100%);
+	background-image: -o-linear-gradient(right, rgba(24,24,24,.7) 0%, rgba(40,40,40,.7) 100%);
+	background-image: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(24,24,24,.7)), color-stop(1, rgba(40,40,40,.7)));
+	background-image: -webkit-linear-gradient(right, rgba(24,24,24,.7) 0%, rgba(40,40,40,.7) 100%);
+	background-image: linear-gradient(to left, rgba(24,24,24,.7) 0%, rgba(40,40,40,.7) 100%);
+}
+
+.video-nav ul {
+	text-align: center;
+	padding:0;
+}
+
+
+.video-nav  li {
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.video-nav ul a:active {
+	color: #acaaaa;
+}
+
+.video-nav a:hover {letter-spacing: -2px !important;}
+
+.video-nav h4 {
+	color: #ff5d43;
+	font-size: 140%;
+	
+}
+
+
+
+#microsite {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-color:#000;
+  top:0px;
+  left:0px;
+  z-index:-1;
+}
+
+#microplayer .sp-video {
+  margin-bottom: 0;
+}
+
+#player {width: 100%;}
+#microplayer .sp-video #production-title {
+  position: relative;
+  float:right;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 45%;
+  height: 90px;
+  margin-left:0;
+  margin-right:10px;
+  top:8px;
+}
+
+#micro-logo {
+  position: relative;
+  width: 45%;
+  background-position: top left;
+  height:70px;
+  background: url("http://www.seismicproductions.com/site/images/seismic-logo-300.png") no-repeat;
+  background-size: contain;
+  float: left;
+  margin-top:7px;
+  margin-right:10px;
+}
+  
+#micro-title {
+  position: relative;
+  width: auto;
+  font-size: 20pt;
+}
+
+#micro-title h1 {
+  color: #fff !important;
+  margin-bottom: 0 !important;
+  line-height:60px;
+}
+
+#microsite .sp-video {
+  top: 15px;
+  position: relative;
+}
+  
+#microplayer {
+  background: rgba(0,0,0,.5);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 3px solid #3d3d3d;
+  position: relative;
+  width: 960px;
+  height: auto;
+  padding: 5px;
+}
+
+#micro-nav img{
+  width: 170px;
+  margin: 5px;
+}
+
+#micro-nav img:hover{
+}  
+
+#micro-nav {
+  position: relative;
+  height: auto;
+  margin-top:0px;
+  margin-bottom: 20px;
+  padding: 5px;
+  letter-spacing:0;
+}
+  
+#micro-nav .w80 {width: 80%}
+#micro-nav .w70 {width: 70%}
+#micro-nav .w100 {width: 100%}
+
+.microclip {
+  text-transform: uppercase;
+  text-align:center;
+  display: inline-block;
+  margin:0 20px;
+}
+
+.microclip a{
+  display:inline;
+}
+
+.microclip a:hover {
+  font-size: 11pt;
+  letter-spacing: 0;
+}
+
+.microclip h4 {
+  font-size: 7pt;
+  line-height: 14pt;
+  background-color: #000;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width:95%;
+  margin-left: 5px;
+}
+  
+.microclip img {
+  border: 1px solid #ccc;
+}
+
+.microhover a h4{
+  color: #ffffff;
+}
+  
+.microhover a:hover h4{
+  color:#ff582a !important;
+}
+
+<!--/*TABLET + --------------------------*/-->
+@media only screen and (min-width: 961px) {
+  #micro-title h1 {font-size: 28pt;}
+}
+  
+<!--/*TABLET-----------------------------*/-->
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  #micro-title h1 {font-size: 22pt;}
+  #micro-nav {width: 100%;}
+  #player {height: 380px;}
+  #microplayer {width: 90%;}
+}
+  
+<!--/*PHONE-----------------------------*/-->
+@media (min-width: 300px) and (max-width: 480px) {
+  #micro-title h1 {font-size: 16pt;}
+  .microclip h4 {font-size: 8pt;}
+  #microplayer {width: 304px;}
+  #micro-nav img {width: 130px;}
+  #micro-nav {width: 100%;padding: 2px;}
+  #player {height: 180px;}
+  #micro-logo, #microplayer .sp-video #production-title {height: 40px;}
+}
+
+#spot-titles {width:100%;}
+

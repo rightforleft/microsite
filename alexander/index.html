@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seismic Productions Micro Site</title>
+<link rel="stylesheet" type="text/css" href="css/micro.css">
+<script src="js/jquery.min.js"></script>
+<!--<script type="text/javascript" src="http://typecast.com/project_css/LG-xwMbjTW/145906114b7b4a.js"></script>-->
+
+<style>
+body {
+  display: none;
+}
+</style>
+
+<script>
+$(window).load(function() {
+  $("body").show();
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+<!--SEISMIC FEATURES-------------------------------------------------------------------------------->
+<!--Initial Loading-->
+<div id="microsite"></div>
+<div class="block">
+
+  <div id="microplayer">
+    <div class="closebutton"><a href="#" onclick="hidePlayer()" target="player"><img src="css/images/close.png" /></a></div>
+    <div class="sp-video">
+      <!--<div id="micro-logo"></div>-->
+      <iframe name="player" src="http://player.vimeo.com/video/92199602?byline=0&amp;portrait=0&amp;autoplay=0" id="player" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    
+      <!--SPOT TITLES------------------------------------------------->
+      <div id="spot-titles"></div>
+      <div id="divLinks">
+        
+        <!--Family/Blackish-->
+        <div id="container1">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Family - Blackish :45</span></h4></li>
+        </ul>
+        </div>
+        
+        <!--Forever-->
+        <div id="container2">
+        <ul class="video-nav">
+          <li class='active'><h4><span>Forever :30</span></h4></li>
+        </ul>
+        </div>
+    
+        <!--Blessed-->
+        <div id="container3">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Blessed :30</span></h4></li>
+        </ul>
+        </div>
+        
+        <!--Worst Day Ever-->
+        <div id="container4">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Worst Day Ever :30</span></h4></li>
+        </ul>
+        </div>
+        
+        <!--Disaster-->
+        <div id="container5">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Disaster :30</span></h4></li>
+        </ul>
+        </div>
+        
+        <!--Penalty-->
+        <div id="container6">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Penalty :30</span></h4></li>
+        </ul>
+        </div>
+		
+        <!--Words-->
+        <div id="container7">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Words :30</span></h4></li>
+        </ul>
+        </div>
+		
+        <!--Parents-->
+        <div id="container8">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Parents :30</span></h4></li>
+        </ul>
+        </div>
+		
+      </div>
+     
+     </div>
+  </div>
+
+  <div id="microthumbs"> 
+    <!--SEISMIC LOGO----------------------------------------------->
+	<div id="micro-logo"></div>
+	<!--PRODUCTION TITLE------------------------------------------->
+	<div id="production-title"></div> 
+    <!--TITLE FOR THE SITE----------------------------------------->
+    <div id="micro-title">
+      <h1>DOMESTIC TV CAMPAIGN</h1>
+    </div>
+    
+    <!--THUMBNAIL GRID-------------------------------------------------------------------------->
+      
+    <!--ROW NUMBER 1------------------------------------------------>  
+    <div id="micro-nav" class="w100">
+      
+      <!--Family/Blackish-->
+      <div class="microclip microhover">
+      <a onclick="showDiv('1')" href="http://player.vimeo.com/video/108532636?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/alex-micro-thumb-01.jpg" /></a>
+      <a onclick="showDiv('1')" href="http://player.vimeo.com/video/108532636?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Family - Blackish :45</h4></a>
+      </a>
+      </div>
+      
+      <!--Forever-->
+      <div class="microclip microhover">
+      <a onclick="showDiv('2')" href="http://player.vimeo.com/video/108506192?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/alex-micro-thumb-02.jpg" /></a>
+      <a onclick="showDiv('2')" href="http://player.vimeo.com/video/108506192?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Forever :30</h4></a>	  
+      </div>
+      
+      <!--Blessed-->
+      <div class="microclip microhover">
+      <a onclick="showDiv('3')" href="http://player.vimeo.com/video/108531197?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/alex-micro-thumb-03.jpg" /></a>
+      <a onclick="showDiv('3')" href="http://player.vimeo.com/video/108531197?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Blessed :30</h4></a>
+      </div>
+	  
+	  <!--Worst Day Ever-->
+      <div class="microclip microhover">
+      <a onclick="showDiv('4')" href="http://player.vimeo.com/video/108506190?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/alex-micro-thumb-04.jpg" /></a>
+	  <a onclick="showDiv('4')" href="http://player.vimeo.com/video/108506190?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Worst Day Ever :30</h4></a>
+      </div>
+      
+    </div>
+      
+    <!--ROW NUMBER 2-------------------------------------------->  
+    <div id="micro-nav" class="w100">
+      
+      <!--Disaster-->
+      <div class="microclip microhover">
+      <a onclick="showDiv('5')" href="http://player.vimeo.com/video/108531202?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/alex-micro-thumb-05.jpg" /></a>
+      <a onclick="showDiv('5')" href="http://player.vimeo.com/video/108531202?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Disaster :30</h4></a>
+      </div>
+      
+      <!--Penalty-->
+      <div class="microclip microhover">
+      <a onclick="showDiv('6')" href="http://player.vimeo.com/video/108506189?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/alex-micro-thumb-06.jpg" /></a>
+      <a onclick="showDiv('6')" href="http://player.vimeo.com/video/108506189?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Penalty :30</h4></a>
+      </div>
+      
+      <!--Words-->
+      <div class="microclip microhover">
+      <a onclick="showDiv('7')" href="http://player.vimeo.com/video/108531200?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/alex-micro-thumb-07.jpg" /></a>
+      <a onclick="showDiv('7')" href="http://player.vimeo.com/video/108531200?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Words :30</h4></a>
+      </div>
+	  
+	  <!--Parents-->
+      <div class="microclip microhover">
+      <a onclick="showDiv('8')" href="http://player.vimeo.com/video/108531198?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/alex-micro-thumb-08.jpg" /></a>
+      <a onclick="showDiv('8')" href="http://player.vimeo.com/video/108531198?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Parents :30</h4></a>
+      </a>
+      </div>
+      
+    </div> 
+   
+    </div>
+  </div>
+</div>
+
+<!--SCRIPTS ------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+
+
+
+
+  //function changeTitle() {
+  //document.getElementById("micro-title").innerHTML = "<h1>Teaser</h1>";
+  //}
+
+  
+    //Tony edit
+  <!--This function manages loading properly-->
+  function makeDoubleDelegate(hideplayer, showDiv) {
+    return function() {
+        if (hidePlayer)
+            hidePlayer();
+        if (showDiv)
+            showDiv(idInfo);
+    }
+}
+
+  
+function hidePlayer() {
+  document.getElementById('microplayer').style.display = 'none';
+  document.getElementById('microthumbs').style.display = 'inline-block';
+}
+  
+// From: http://www.webdeveloper.com/forum/showthread.php?266743-Switch-Div-Content-Using Javascript&p=1229155#post1229155
+
+function showDiv(idInfo) {
+  var sel = document.getElementById('divLinks').getElementsByTagName('div');
+  for (var i=0; i<sel.length; i++) {
+    sel[i].style.display = 'none';
+  }
+  document.getElementById('microthumbs').style.display = 'none';
+  document.getElementById('container'+idInfo).style.display = 'block';
+  document.getElementById('microplayer').style.display = 'inline-block';
+
+}
+
+</script>
+
+</body>
+</html>

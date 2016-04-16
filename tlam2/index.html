@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seismic Productions Micro Site</title>
+<link rel="stylesheet" type="text/css" href="css/micro.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="http://typecast.com/project_css/LG-xwMbjTW/145906114b7b4a.js"></script>
+
+<style>
+body {
+  display: none;
+}
+</style>
+
+<script>
+$(window).load(function() {
+  $("body").show();
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+<!--SEISMIC FEATURES------------------------------------------------------------------------------->
+<!--Initial Loading-->
+<div id="microsite"></div>
+<div class="wrapper">
+	<div class="container">
+		<div class="row">
+		
+			<!-- CONTENT -->
+			<div class="col-md-12 col-sm-12">
+				<div class="block">
+				
+					<!-- MICRO PLAYER -->
+					<div id="microplayer">
+						<div class="closebutton"><a href="#" onclick="hidePlayer()" target="player"><img src="css/images/close.png" /></a></div>
+						<div class="sp-video">
+						  <!--<div id="micro-logo"></div>
+						  <!--<div id="production-title"></div>-->
+						  <iframe name="player" src="http://player.vimeo.com/video/92199602?byline=0&amp;portrait=0&amp;autoplay=0" id="player" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						
+						  <!--SPOT TITLES----------------------------------------------->
+						  <div id="spot-titles"></div>
+						  <div id="divLinks">
+							
+							<!--Trailer-->
+							<div id="container1">
+							<ul class="video-nav">
+							  <li class="active"><h4><span>Trailer</span></h4></li>
+							</ul>
+							</div>
+							
+							<!--Back Together :30-->
+							<div id="container2">
+							<ul class="video-nav">
+							  <li class='active'><h4><span>Back Together :30</span></h4></li>
+							</ul>
+							</div>
+						
+							<!--Mind Games :30-->
+							<div id="container3">
+							<ul class="video-nav">
+							  <li class="active"><h4><span>Mind Games :30</span></h4></li>
+							</ul>
+							</div>
+							
+							<!--Ultimate Battleground :30-->
+							<div id="container4">
+							<ul class="video-nav">
+							  <li class="active"><h4><span>Ultimate Battleground :30</span></h4></li>
+							</ul>
+							</div>
+							
+							<!--Wrong Man :30-->
+							<div id="container5">
+							<ul class="video-nav">
+							  <li class="active"><h4><span>Wrong Man :30</span></h4></li>
+							</ul>
+							</div>
+							
+							<!--Girls :15-->
+							<div id="container6">
+							<ul class="video-nav">
+							  <li class="active"><h4><span>Girls :15</span></h4></li>
+							</ul>
+							</div>
+							
+							<!--Jail :15-->
+							<div id="container7">
+							<ul class="video-nav">
+							  <li class="active"><h4><span>Jail :15</span></h4></li>
+							</ul>
+							</div>
+							
+							<!--Critics :15-->
+							<div id="container8">
+							<ul class="video-nav">
+							  <li class="active"><h4><span>Critics :15</span></h4></li>
+							</ul>
+							</div>
+							
+							
+						  </div>
+ 
+						 </div>
+					</div>
+				
+					<!-- MICRO THUMBS -->
+					<div id="microthumbs"> 
+						<!--SEISMIC LOGO----------------------------------------------->
+						<div id="micro-logo"></div>
+						<div id="micro-MT"></div>
+						<!--TITLE FOR THE SITE----------------------------------------->
+						<div id="micro-title">
+						  <h1>DOMESTIC TRAILER AND TV CAMPAIGN</h1>
+						</div>
+						<!--THUMBNAIL GRID---------------------------------------------->
+						<div id="micro-nav">
+							<div class="wrapper">
+								<div class="container">
+									<div class="row">  
+										
+										<div class="col-md-3 col-sm-3">
+											<!--TRAILER-->
+											<div class="microclip microhover">
+											<a onclick="showDiv('1')" href="http://player.vimeo.com/video/87218204?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/TLM2-micro-thumb-01.jpg" /></a>
+											<a onclick="showDiv('1')" href="http://player.vimeo.com/video/87218204?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Trailer</h4></a>
+											</a>
+											</div>
+										</div>
+								
+										<div class="col-md-3 col-sm-3">
+										  <!--BACK TOGETHER :30-->
+										  <div class="microclip microhover">
+										  <a onclick="showDiv('2')" href="http://player.vimeo.com/video/98585242?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/TLM2-micro-thumb-02.jpg" /></a>
+										  <a onclick="showDiv('2')" href="http://player.vimeo.com/video/98585242?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Back Together :30</h4></a>	  
+										  </div>
+										</div>
+										
+										<div class="col-md-3 col-sm-3">
+										  <!--MIND GAMES :30-->
+										  <div class="microclip microhover">
+										  <a onclick="showDiv('3')" href="http://player.vimeo.com/video/98585341?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/TLM2-micro-thumb-03.jpg" /></a>
+										  <a onclick="showDiv('3')" href="http://player.vimeo.com/video/98585341?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Mind Games :30</h4></a>
+										  </div>
+										</div>
+										
+										<div class="col-md-3 col-sm-3">
+										  <!--ULTIMATE BATTLEGROUND :30-->
+										  <div class="microclip microhover">
+										  <a onclick="showDiv('4')" href="http://player.vimeo.com/video/98585393?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/TLM2-micro-thumb-04.jpg" /></a>
+										<a onclick="showDiv('4')" href="http://player.vimeo.com/video/98585393?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Ultimate Battleground :30</h4></a>
+										  </div>
+										</div> 
+										
+										<div class="col-md-3 col-sm-3">
+											<!--WRONG MAN :30-->
+											<div class="microclip microhover">
+											<a onclick="showDiv('5')" href="http://player.vimeo.com/video/98585438?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/TLM2-micro-thumb-05.jpg" /></a>
+											<a onclick="showDiv('5')" href="http://player.vimeo.com/video/98585438?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Wrong Man :30</h4></a>
+											</div>
+										</div>
+										
+										<div class="col-md-3 col-sm-3">
+											<!--GIRLS :15-->
+											<div class="microclip microhover">
+											<a onclick="showDiv('6')" href="http://player.vimeo.com/video/98585177?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/TLM2-micro-thumb-06.jpg" /></a>
+											<a onclick="showDiv('6')" href="http://player.vimeo.com/video/98585177?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Girls :15</h4></a>
+											</div>
+										</div>
+										
+										<div class="col-md-3 col-sm-3">	
+											<!--JAIL :15-->
+											<div class="microclip microhover">
+											<a onclick="showDiv('7')" href="http://player.vimeo.com/video/98585241?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/TLM2-micro-thumb-07.jpg" /></a>
+											<a onclick="showDiv('7')" href="http://player.vimeo.com/video/98585241?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Jail :15</h4></a>
+											</div>
+										</div>
+										
+										<div class="col-md-3 col-sm-3">	
+											<!--CRITICS :15-->
+											<div class="microclip microhover">
+											<a onclick="showDiv('8')" href="http://player.vimeo.com/video/98585297?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/TLM2-micro-thumb-08.jpg" /></a>
+											<a onclick="showDiv('8')" href="http://player.vimeo.com/video/98585297?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Critics :15</h4></a>
+											</a>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+				   
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<!--SCRIPTS ------------------------------------------------------------------------------------------->
+<script type="text/javascript">
+
+
+
+
+  //function changeTitle() {
+  //document.getElementById("micro-title").innerHTML = "<h1>Teaser</h1>";
+  //}
+
+  
+    //Tony edit
+  <!--This function manages loading properly-->
+  function makeDoubleDelegate(hideplayer, showDiv) {
+    return function() {
+        if (hidePlayer)
+            hidePlayer();
+        if (showDiv)
+            showDiv(idInfo);
+    }
+}
+
+  
+function hidePlayer() {
+  document.getElementById('microplayer').style.display = 'none';
+  document.getElementById('microthumbs').style.display = 'inline-block';
+}
+  
+// From: http://www.webdeveloper.com/forum/showthread.php?266743-Switch-Div-Content-Using Javascript&p=1229155#post1229155
+
+function showDiv(idInfo) {
+  var sel = document.getElementById('divLinks').getElementsByTagName('div');
+  for (var i=0; i<sel.length; i++) {
+    sel[i].style.display = 'none';
+  }
+  document.getElementById('microthumbs').style.display = 'none';
+  document.getElementById('container'+idInfo).style.display = 'block';
+  document.getElementById('microplayer').style.display = 'inline-block';
+
+}
+
+</script>
+
+</body>
+</html>
