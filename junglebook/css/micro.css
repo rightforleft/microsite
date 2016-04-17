@@ -79,9 +79,9 @@ body, h1, h2, h3, h4 {font-family: "Cicle_Semi"; letter-spacing: 0px;} /*Century
 	position:fixed;
 	text-align:center;
 	height: 583px;
-	top:0;
+	/*top:0;*/
 	left:0;
-	bottom:0;
+	/*bottom:0;*/
 	right:0;
 	margin: auto;
 }
@@ -98,7 +98,7 @@ body, h1, h2, h3, h4 {font-family: "Cicle_Semi"; letter-spacing: 0px;} /*Century
   top:0px;
   left:0px;
   z-index:-1;
-  background-image: url('../images/22jumpstreet-micro-bg.jpg');
+  background-image: url('../images/bg.jpg');
 }
 
 #microplayer .sp-video {margin-bottom: 0;}
@@ -130,10 +130,11 @@ body, h1, h2, h3, h4 {font-family: "Cicle_Semi"; letter-spacing: 0px;} /*Century
 }
   
 #micro-title {
+  clear:both;
+  display: inline-block;
+  font-size: 20pt;
   position: relative;
   width: auto;
-  font-size: 20pt;
-  clear:both;
 }
 
 #micro-title h1 {
@@ -145,7 +146,7 @@ body, h1, h2, h3, h4 {font-family: "Cicle_Semi"; letter-spacing: 0px;} /*Century
 #microsite .sp-video {top: 15px;position: relative;}
   
 #microplayer, #microthumbs {
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,.7);
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -166,7 +167,7 @@ body, h1, h2, h3, h4 {font-family: "Cicle_Semi"; letter-spacing: 0px;} /*Century
   margin-top:0px;
   margin-bottom: 20px;
   padding: 5px;
-  min-width: 960px;
+  /*min-width: 960px;*/
 }
   
 #micro-nav .w80 {width: 80%}
@@ -177,21 +178,20 @@ body, h1, h2, h3, h4 {font-family: "Cicle_Semi"; letter-spacing: 0px;} /*Century
   text-transform: uppercase;
   text-align:center;
   display: inline-block;
-  margin:0 10px;
+  vertical-align: top;
+  width: 24%;
 }
 
 .microclip a{display:inline;}
 
 .microclip h4 {
-  font-size: 12pt;
-  line-height: 20pt;
-  background-color: rgba(0,0,0,.5);
+  font-size: 11pt;
+  line-height: 10pt;
+  /*background-color: rgba(0,0,0,.5);*/
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  /*width:95%;
-  margin-left: 5px;*/
 }
   
 .microclip img {border: 1px solid #ccc;}
@@ -203,7 +203,24 @@ body, h1, h2, h3, h4 {font-family: "Cicle_Semi"; letter-spacing: 0px;} /*Century
 	margin-left: 910px;
 }
 
+.row.no-gutters div {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 #player {height: 484px;width: 100%;}
+
+#production-title .logo {
+  background: url('../images/logo.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 132px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 539px;
+}
 
 iframe, .fallback {
 	width: 100%;
@@ -212,6 +229,19 @@ iframe, .fallback {
 	padding: 0;
 	background-color: #000;
 	overflow: hidden;
+}
+
+.loading {
+  display: block;
+  font-size: 2em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
 }
 
 .w80 {width: 80%}
