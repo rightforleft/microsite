@@ -3,9 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <title>Seismic Productions Micro Site</title>
-<link rel="stylesheet" type="text/css" href="css/micro.css">
-<script src="js/jquery.min.js"></script>
+
 <!--<script type="text/javascript" src="http://typecast.com/project_css/LG-xwMbjTW/145906114b7b4a.js"></script>-->
+
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!-- CSS Stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/micro.css">
+
+<!-- jQuery Scripts -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
 
 <style>
 body {
@@ -28,79 +41,65 @@ $(window).load(function() {
 <!--SEISMIC FEATURES-->
 <!--Initial Loading-->
 <div id="microsite"></div>
-<div class="block">
-
+<div class="block container-fluid">
+  <div id="production-title"><div class="logo"></div></div>
   <div id="microplayer">
     <div class="closebutton"><a href="#" onclick="hidePlayer()" target="player"><img src="css/images/close.png" /></a></div>
     <div class="sp-video">
       <!--<div id="micro-logo"></div>-->
-      <!--<div id="production-title"></div>-->
-      <iframe name="player" src="http://player.vimeo.com/video/92199602?byline=0&amp;portrait=0&amp;autoplay=0" id="player" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      
+      <iframe name="player" src="http://player.vimeo.com/video/162744171?byline=0&amp;portrait=0&amp;autoplay=0" id="player" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     
       <!--SPOT TITLES-->
       <div id="spot-titles"></div>
       <div id="divLinks">
         
-        <!--Trailer-->
+        <!--SPOT 1-->
         <div id="container1">
         <ul class="video-nav">
-          <li class="active"><h4><span>Trailer</span></h4></li>
+          <li class="active"><h4><span>Forbidden / Quantico :60</span></h4></li>
         </ul>
         </div>
         
-        <!--2 Years Redband-->
+        <!--SPOT 2-->
         <div id="container2">
         <ul class="video-nav">
-          <li class='active'><h4><span>2 Years Redband</span></h4></li>
+          <li class='active'><h4><span>Epic Adventure :30</span></h4></li>
         </ul>
         </div>
     
-        <!--College Redband-->
+        <!--SPOT 3-->
         <div id="container3">
         <ul class="video-nav">
-          <li class="active"><h4><span>College Redband</span></h4></li>
+          <li class="active"><h4><span>Return Review :30</span></h4></li>
         </ul>
         </div>
         
-        <!--Missing You :30-->
+        <!--SPOT 4-->
         <div id="container4">
         <ul class="video-nav">
-          <li class="active"><h4><span>Missing You :30</span></h4></li>
+          <li class="active"><h4><span>Danger :15</span></h4></li>
         </ul>
         </div>
         
-        <!--Wolverine :30-->
+        <!--SPOT 5-->
         <div id="container5">
         <ul class="video-nav">
-          <li class="active"><h4><span>Wolverine :30</span></h4></li>
+          <li class="active"><h4><span>Let's Go :15</span></h4></li>
         </ul>
         </div>
         
-        <!--Wait :15-->
+        <!--SPOT 6-->
         <div id="container6">
         <ul class="video-nav">
-          <li class="active"><h4><span>Wait :15</span></h4></li>
+          <li class="active"><h4><span>#1 Movie Family-Kids :15</span></h4></li>
         </ul>
         </div>
 		
-        <!--Back :15-->
+        <!--SPOT 7-->
         <div id="container7">
         <ul class="video-nav">
-          <li class="active"><h4><span>Back :15</span></h4></li>
-        </ul>
-        </div>
-		
-        <!--Countdown Review :15-->
-        <div id="container8">
-        <ul class="video-nav">
-          <li class="active"><h4><span>Countdown Review :15</span></h4></li>
-        </ul>
-        </div>
-		
-		    <!--Graphic Review :15-->
-        <div id="container9">
-        <ul class="video-nav">
-          <li class="active"><h4><span>Graphic Review :15</span></h4></li>
+          <li class="active"><h4><span>Urgent Masthead Review :15</span></h4></li>
         </ul>
         </div>
 		
@@ -122,35 +121,23 @@ $(window).load(function() {
     <!--ROW NUMBER 1-->  
     <div id="micro-nav" class="w100">
       
-      <!--TRAILER-->
+      <!--SPOT 1-->
       <div class="microclip microhover">
-      <a onclick="showDiv('1')" href="http://player.vimeo.com/video/97183259?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-01.jpg" /></a>
-      <a onclick="showDiv('1')" href="http://player.vimeo.com/video/97183259?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Trailer</h4></a>
+      <a onclick="showDiv('1')" href="http://player.vimeo.com/video/162744171?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-01.jpg" /></a>
+      <a onclick="showDiv('1')" href="http://player.vimeo.com/video/162744171?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Forbidden / Quantico :60</h4></a>
       </a>
       </div>
       
-      <!--2 YEARS REDBAND-->
+      <!--SPOT 2-->
       <div class="microclip microhover">
-      <a onclick="showDiv('2')" href="http://player.vimeo.com/video/97755442?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-02.jpg" /></a>
-      <a onclick="showDiv('2')" href="http://player.vimeo.com/video/97755442?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>2 Years Redband</h4></a>	  
+      <a onclick="showDiv('2')" href="http://player.vimeo.com/video/162744170?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-02.jpg" /></a>
+      <a onclick="showDiv('2')" href="http://player.vimeo.com/video/162744170?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Epic Adventure :30</h4></a>	  
       </div>
       
-      <!--COLLEGE REDBAND-->
+      <!--SPOT 3-->
       <div class="microclip microhover">
-      <a onclick="showDiv('3')" href="http://player.vimeo.com/video/97765316?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-03.jpg" /></a>
-      <a onclick="showDiv('3')" href="http://player.vimeo.com/video/97765316?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>College Redband</h4></a>
-      </div>
-	  
-	  <!--MISSING YOU :30-->
-      <div class="microclip microhover">
-      <a onclick="showDiv('4')" href="http://player.vimeo.com/video/97184400?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-04.jpg" /></a>
-<a onclick="showDiv('4')" href="http://player.vimeo.com/video/97184400?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Missing You :30</h4></a>
-      </div>
-	  
-      <!--WOLVERINE :30-->
-      <div class="microclip microhover">
-      <a onclick="showDiv('5')" href="http://player.vimeo.com/video/97754779?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-05.jpg" /></a>
-      <a onclick="showDiv('5')" href="http://player.vimeo.com/video/97754779?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Wolverine :30</h4></a>
+      <a onclick="showDiv('3')" href="http://player.vimeo.com/video/162744175?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-03.jpg" /></a>
+      <a onclick="showDiv('3')" href="http://player.vimeo.com/video/162744175?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Return Review :30</h4></a>
       </div>
       
     </div>
@@ -158,29 +145,29 @@ $(window).load(function() {
     <!--ROW NUMBER 2-->  
     <div id="micro-nav" class="w100">
       
-      <!--WAIT :15-->
+      <!--SPOT 4-->
       <div class="microclip microhover">
-      <a onclick="showDiv('6')" href="http://player.vimeo.com/video/97754494?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-06.jpg" /></a>
-      <a onclick="showDiv('6')" href="http://player.vimeo.com/video/97754494?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Wait :15</h4></a>
+      <a onclick="showDiv('4')" href="http://player.vimeo.com/video/162744166?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-04.jpg" /></a>
+      <a onclick="showDiv('4')" href="http://player.vimeo.com/video/162744166?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Danger :15</h4></a>
       </div>
       
-      <!--BACK :15-->
+      <!--SPOT 5-->
       <div class="microclip microhover">
-      <a onclick="showDiv('7')" href="http://player.vimeo.com/video/97754781?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-07.jpg" /></a>
-      <a onclick="showDiv('7')" href="http://player.vimeo.com/video/97754781?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Back :15</h4></a>
+      <a onclick="showDiv('5')" href="http://player.vimeo.com/video/162744173?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-05.jpg" /></a>
+      <a onclick="showDiv('5')" href="http://player.vimeo.com/video/162744173?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Let's Go :15</h4></a>
       </div>
 	  
-      <!--COUNTDOWN REVIEW :15-->
+      <!--SPOT 6-->
       <div class="microclip microhover">
-      <a onclick="showDiv('8')" href="http://player.vimeo.com/video/97754780?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-08.jpg" /></a>
-      <a onclick="showDiv('8')" href="http://player.vimeo.com/video/97754780?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Countdown Review :15</h4></a>
+      <a onclick="showDiv('6')" href="http://player.vimeo.com/video/163024837?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-06.jpg" /></a>
+      <a onclick="showDiv('6')" href="http://player.vimeo.com/video/163024837?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>#1 Movie Family-Kids :15</h4></a>
       </a>
       </div>
 	  
-      <!--GRAPHIC REVIEW :15-->
+      <!--SPOT 7-->
       <div class="microclip microhover">
-      <a onclick="showDiv('9')" href="http://player.vimeo.com/video/97754778?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-09.jpg" /></a>
-      <a onclick="showDiv('9')" href="http://player.vimeo.com/video/97754778?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Graphic Review :15</h4></a>
+      <a onclick="showDiv('7')" href="http://player.vimeo.com/video/163028261?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-07.jpg" /></a>
+      <a onclick="showDiv('7')" href="http://player.vimeo.com/video/163028261?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Urgent Masthead Review :15</h4></a>
       </a>
       </div>
       
@@ -188,21 +175,21 @@ $(window).load(function() {
    
     </div>
   </div>
+
+  <div class="loading">LOADING...</div>
+
 </div>
+
+
 
 <!--SCRIPTS -->
 <script type="text/javascript">
-
-
-
 
   //function changeTitle() {
   //document.getElementById("micro-title").innerHTML = "<h1>Teaser</h1>";
   //}
 
-  
-    //Tony edit
-  <!--This function manages loading properly-->
+  <!-- /*This function manages loading properly*/ -->
   function makeDoubleDelegate(hideplayer, showDiv) {
     return function() {
         if (hidePlayer)
@@ -210,26 +197,32 @@ $(window).load(function() {
         if (showDiv)
             showDiv(idInfo);
     }
-}
-
-  
-function hidePlayer() {
-  document.getElementById('microplayer').style.display = 'none';
-  document.getElementById('microthumbs').style.display = 'inline-block';
-}
-  
-// From: http://www.webdeveloper.com/forum/showthread.php?266743-Switch-Div-Content-Using Javascript&p=1229155#post1229155
-
-function showDiv(idInfo) {
-  var sel = document.getElementById('divLinks').getElementsByTagName('div');
-  for (var i=0; i<sel.length; i++) {
-    sel[i].style.display = 'none';
   }
-  document.getElementById('microthumbs').style.display = 'none';
-  document.getElementById('container'+idInfo).style.display = 'block';
-  document.getElementById('microplayer').style.display = 'inline-block';
 
-}
+
+  function hidePlayer() {
+    document.getElementById('microplayer').style.display = 'none';
+    document.getElementById('microthumbs').style.display = 'inline-block';
+  }
+    
+  // From: http://www.webdeveloper.com/forum/showthread.php?266743-Switch-Div-Content-Using Javascript&p=1229155#post1229155
+
+  function showDiv(idInfo) {
+    var sel = document.getElementById('divLinks').getElementsByTagName('div');
+    for (var i=0; i<sel.length; i++) {
+      sel[i].style.display = 'none';
+    }
+    document.getElementById('microthumbs').style.display = 'none';
+
+  setTimeout(function (){
+
+    document.getElementById('container'+idInfo).style.display = 'block';
+    document.getElementById('microplayer').style.display = 'inline-block';
+
+  }, 500); // How long do you want the delay to be (in milliseconds)? 
+    
+
+  }
 
 </script>
 
