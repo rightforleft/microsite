@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Seismic Productions Micro Site</title>
+
+<!--<script type="text/javascript" src="http://typecast.com/project_css/LG-xwMbjTW/145906114b7b4a.js"></script>-->
+
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<!-- CSS Stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/micro.css">
+
+<!-- jQuery Scripts -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+
+<style>
+body {
+  display: none;
+}
+</style>
+
+<script>
+$(window).load(function() {
+  $("body").show();
+});
+</script>
+
+
+</head>
+
+<body>
+
+
+<!--SEISMIC FEATURES-->
+<!--Initial Loading-->
+<div id="microsite"></div>
+<div class="block container-fluid">
+  <div class="production-title logo">
+    <img src="images/logo.png" />
+  </div>
+  <!-- Spot Images  -->
+  <div id="spot-images" class="row">
+    <img class="overlay-img one animated bounceInUp" src="images/overlay-img-01.png" alt="Sausage Party" />
+    <img class="overlay-img two animated bounceInUp" src="images/overlay-img-02.png" alt="Sausage Party" />
+    <img class="overlay-img three animated bounceInUp" src="images/overlay-img-03.png" alt="Sausage Party" />
+    <img class="overlay-img four animated bounceInUp" src="images/overlay-img-04.png" alt="Sausage Party" />
+    <img class="overlay-img five animated bounceInUp" src="images/overlay-img-05.png" alt="Sausage Party" />
+  </div>
+
+  <div id="microplayer">
+    <div class="closebutton">
+      <a href="javascript:;" onclick="hidePlayer()" target="player"><img src="css/images/close.png" /></a>
+    </div>
+    <div class="sp-video">
+      <!--<div id="micro-logo"></div>-->
+      
+      <iframe name="player" src="http://player.vimeo.com/video/169911202?byline=0&amp;portrait=0&amp;autoplay=0" id="player" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    
+      <!--SPOT TITLES-->
+      <div id="spot-titles"></div>
+      <div id="divLinks">
+        
+        <!--SPOT 1-->
+        <div id="container1">
+        <ul class="video-nav">
+          <li class="active"><h4><span>In Store :60</span></h4></li>
+        </ul>
+        </div>
+        
+        <!--SPOT 2-->
+        <div id="container2">
+        <ul class="video-nav">
+          <li class='active'><h4><span>Beginning :60</span></h4></li>
+        </ul>
+        </div>
+    
+        <!--SPOT 3-->
+        <div id="container3">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Home :60</span></h4></li>
+        </ul>
+        </div>
+        
+        <!--SPOT 4-->
+        <div id="container4">
+        <ul class="video-nav">
+          <li class="active"><h4><span>No Idea :30</span></h4></li>
+        </ul>
+        </div>
+        
+        <!--SPOT 5-->
+        <div id="container5">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Masterpiece :30</span></h4></li>
+        </ul>
+        </div>
+        
+        <!--SPOT 6-->
+        <div id="container6">
+        <ul class="video-nav">
+          <li class="active"><h4><span>Warning :30</span></h4></li>
+        </ul>
+        </div>
+		
+      </div>
+     
+     </div>
+  </div>
+
+  <div id="microthumbs"> 
+    <!--SEISMIC LOGO-->
+    <div id="micro-logo"></div>
+    
+    <!--THUMBNAIL GRID-->
+    <div id="micro-nav">
+
+      <div class="row">
+
+        <!--SPOT 1-->
+        <div class="col-xs-6 col-sm-4 col-xl-12 microclip microhover">
+        <a onclick="showDiv('1')" href="http://player.vimeo.com/video/178680688?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-01.jpg" /></a>
+        <a onclick="showDiv('1')" href="http://player.vimeo.com/video/178680688?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>In Store :60</h4></a>
+        </a>
+        </div>
+        
+        <!--SPOT 2-->
+        <div class="col-xs-6 col-sm-4 col-xl-12 microclip microhover">
+        <a onclick="showDiv('2')" href="http://player.vimeo.com/video/178680686?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-02.jpg" /></a>
+        <a onclick="showDiv('2')" href="http://player.vimeo.com/video/178680686?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Beginning :60</h4></a>	  
+        </div>
+
+        <!--SPOT 3-->
+        <div class="col-xs-6 col-sm-4 col-xl-12 microclip microhover">
+        <a onclick="showDiv('3')" href="http://player.vimeo.com/video/178680684?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-03.jpg" /></a>
+        <a onclick="showDiv('3')" href="http://player.vimeo.com/video/178680684?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Home :60</h4></a>
+        </div>
+
+        <!--SPOT 4-->
+        <div class="col-xs-6 col-sm-4 col-xl-12 microclip microhover">
+        <a onclick="showDiv('4')" href="http://player.vimeo.com/video/178680687?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-04.jpg" /></a>
+        <a onclick="showDiv('4')" href="http://player.vimeo.com/video/178680687?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>No Idea :30</h4></a>
+        </div>
+
+        <!--SPOT 5-->
+        <div class="col-xs-6 col-sm-4 col-xl-12 microclip microhover">
+        <a onclick="showDiv('5')" href="http://player.vimeo.com/video/178685899?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-05.jpg" /></a>
+        <a onclick="showDiv('5')" href="http://player.vimeo.com/video/178685899?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Masterpiece :30</h4></a>
+        </div>
+  	  
+        <!--SPOT 6-->
+        <div class="col-xs-6 col-sm-4 col-xl-12 microclip microhover">
+        <a onclick="showDiv('6')" href="http://player.vimeo.com/video/178680685?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><img src="images/thumb-06.jpg" /></a>
+        <a onclick="showDiv('6')" href="http://player.vimeo.com/video/178680685?byline=0&amp;portrait=0&amp;autoplay=1" target="player"><h4>Warning :30</h4></a>
+        </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--TITLE FOR THE SITE-->
+    <div id="micro-title">
+      <h1>DOMESTIC TV CAMPAIGN</h1>
+    </div>
+  </div>
+
+  <div id="loading">LOADING...</div>
+
+</div>
+<!--<div id="production-footer" class="animated bounceInUp"></div>-->
+
+
+<!--SCRIPTS -->
+<script type="text/javascript">
+
+  //function changeTitle() {
+  //document.getElementById("micro-title").innerHTML = "<h1>Teaser</h1>";
+  //}
+
+  <!-- /*This function manages loading properly*/ -->
+  function makeDoubleDelegate(hideplayer, showDiv) {
+    return function() {
+        if (hidePlayer)
+            hidePlayer();
+        if (showDiv)
+            showDiv(idInfo);
+    }
+  }
+
+
+  function hidePlayer() {
+    var source = $('iframe#player').attr('src');
+    $('iframe#player').attr('src','');
+    document.getElementById('microplayer').style.display = 'none';
+    document.getElementById('microthumbs').style.display = 'inline-block';
+    document.getElementById('spot-images').style.zIndex = '10';
+  }
+    
+  // From: http://www.webdeveloper.com/forum/showthread.php?266743-Switch-Div-Content-Using Javascript&p=1229155#post1229155
+
+  function showDiv(idInfo) {
+    var sel = document.getElementById('divLinks').getElementsByTagName('div');
+    for (var i=0; i<sel.length; i++) {
+      sel[i].style.display = 'none';
+    }
+    document.getElementById('microthumbs').style.display = 'none';
+    document.getElementById('loading').style.display = 'block';
+    document.getElementById('spot-images').style.zIndex = '-10';
+
+  setTimeout(function (){
+
+    document.getElementById('container'+idInfo).style.display = 'block';
+    document.getElementById('microplayer').style.display = 'inline-block';
+    document.getElementById('loading').style.display = 'none';
+
+  }, 500); // How long do you want the delay to be (in milliseconds)? 
+
+
+
+  }
+
+</script>
+
+</body>
+</html>
