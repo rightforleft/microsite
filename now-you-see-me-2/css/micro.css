@@ -1,0 +1,432 @@
+/* MICRO SITE CSS */
+@font-face {
+    font-family: 'Cicle_Semi';
+    src: url('../fonts/Cicle_Semi-webfont.eot');
+    src: url('../fonts/Cicle_Semi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cicle_Semi-webfont.woff') format('woff'),
+         url('../fonts/Cicle_Semi-webfont.ttf') format('truetype'),
+         url('../fonts/Cicle_Semi-webfont.svg#sofia_pro_lightregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+body, h1, h2, h3, h4 {font-family: "Cicle_Semi"; letter-spacing: 0px;} /*Century Gothic W02*/
+#container1, #container2, #container3, 
+#container4, #container5, #container6, 
+#container7, #container8, #container9, 
+#container10, #container11, #container12 {
+   display:none;
+   overflow:hidden;
+}
+
+.pullRight {
+  float: right;
+}
+.pullLeft {
+  float: left;
+}
+
+/* MENU DRAWER */
+#menudrawer{
+  position: absolute;
+  width:600px;
+  height:100%;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,.7);
+  padding: 20px;
+  z-index: 100;
+}
+#menudrawer div.menu.sub {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background-color: #202324;
+	z-index: -1;
+	width: 500px;
+	border: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+#menudrawer div.menu {
+	height: 100%;
+	position: absolute;
+	border-right: 1px solid rgba(0,0,0,.35);
+}
+.video-nav {
+	width: 100%;
+	height: 50px;
+	margin-top: 5px;
+	padding:0;
+}
+.video-nav ul {text-align: center;padding:0;}
+.video-nav  li {
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 12px;
+	padding-left: 12px;
+	text-transform: uppercase;
+}
+.video-nav a, .microclip a {
+	line-height: 2.2em;
+	color: #fff;
+	-webkit-transition: color 0.1s ease-in;
+	text-decoration: none;
+}
+.video-nav li.active, .video-nav a:hover, .microclip a:active, .microclip a:hover {color: #acaaaa;}
+.video-nav h4 {font-size: 20px;margin: 6px 0;line-height:30pt;}
+.block {
+	position:fixed;
+	text-align:center;
+	height: 583px;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+#microsite {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  background-color:#333;
+  top:0px;
+  left:0px;
+  z-index:-1;
+  background-image: url('../images/bg.jpg');
+}
+
+#microplayer .sp-video {margin-bottom: 0;}
+.sp-video {text-align: center;}
+#player {width: 100%;}
+#microplayer .sp-video #production-title {
+  position: relative;
+  float:right;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 45%;
+  height: 90px;
+  margin-left:0;
+  margin-right:10px;
+  top:8px;
+}
+
+#micro-logo {
+    background: url("images/seismic-logo-300.png") center no-repeat;
+    background-size: contain;
+    height: 38px;
+    left: 0;
+    margin-top: 18px;
+    position: absolute;
+    width: 100%;
+}
+  
+#micro-title {
+  clear:both;
+  display: inline-block;
+  margin-bottom: 14px;
+  position: relative;
+  width: auto;
+}
+
+#micro-title h1 {
+  color: #fff !important;
+  margin-bottom: 0 !important;
+  margin-top: 10px;
+  line-height: 32px;
+}
+
+#microsite .sp-video {
+  top: 15px;
+  position: relative;
+}
+  
+#microplayer, 
+#microthumbs {
+	background: #102546;
+	/*
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+  */
+  min-height: 536px;
+	width: 960px;
+	padding: 5px;
+	vertical-align:middle;
+	display: inline-block;
+}
+
+#microplayer {
+  display:none;
+  margin-top: 6%;
+}
+#micro-nav img {
+  width: 160px;
+  margin: 0px;
+}
+#micro-nav {
+  position: relative;
+  height: auto;
+  margin-top:0px;
+  padding: 5px;
+}
+  
+#micro-nav .w80 {width: 80%}
+#micro-nav .w70 {width: 70%}
+#micro-nav .w100 {width: 100%}
+
+.microclip {
+  text-transform: uppercase;
+  text-align:center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.microclip a {
+  display:inline;
+}
+
+.microclip h4 {
+  font-size: 1.2em;
+  line-height: 1em;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+  
+.microclip img {border: 1px solid #ccc;}
+
+#microplayer .closebutton {
+	position:absolute;
+	width:50px;
+	margin-top: 2px;
+  margin-left: 900px;
+}
+
+.row.no-gutters div {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#player {height: 484px;width: 100%;}
+
+.production-title1.logo {
+  background: url('../images/production-logo1.png') center no-repeat;
+  background-size: contain;
+  height: 74px;
+  width: 100%;
+}
+.production-title2.logo {
+  background: url('../images/production-logo2.png') center no-repeat;
+  background-size: contain;
+  height: 74px;
+  width: 100%;
+}
+.production-bg1 {
+  background: url('../images/production-bg1.png') right no-repeat;
+  background-size: contain;
+  height: 200px;
+  margin-top: 20px;
+  width: 100%;
+}
+.production-bg2 {
+  background: url('../images/production-bg2.png') left no-repeat;
+  background-size: contain;
+  height: 200px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.col:not(:first-child,:last-child) {
+  padding-right:7px;
+  padding-left:7px;
+}
+
+iframe, .fallback {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	overflow: hidden;
+}
+
+#loading {
+  display: none;
+  font-size: 2em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
+}
+
+.w80 {width: 80%}
+.w70 {width: 70%}
+.w100 {width: 100%}
+
+/* iPhone5 =============================== */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  #micro-title h1 {
+    font-size: 1.3em;
+    line-height: 1em;
+  }
+  #microplayer, 
+  #microthumbs {
+    width: 100%;
+  }
+  #microthumbs {
+    height: 700px;
+  }
+   #microplayer .closebutton {
+    right: 7%;
+  }
+  #micro-logo, 
+  #microplayer .sp-video #production-title {
+    height: 48px;
+    width: 100%
+  }
+  #production-title .logo {
+    height: 74px;
+  }
+  #micro-nav img {
+    width: 100%;
+  }
+  .microclip h4 {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .block {
+    height: 640px;
+    overflow: auto;
+  }
+}
+
+/* iPhone6 & 6Plus PORTRAIT ================================*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 736px) {
+  #micro-title h1 {
+    font-size: 1.8em;
+    line-height: 1em;
+  }
+  #microplayer, 
+  #microthumbs {
+    width: 100%;
+  }
+  #microthumbs {
+    height: auto;
+  }
+  #microplayer {
+    min-height: 0;
+  }
+   #microplayer .closebutton {
+    right: 7%;
+  }
+  #player {
+    height: 180px;
+  }
+  #micro-logo, 
+  #microplayer .sp-video #production-title {
+    height: 42px;
+    margin-top: 0;
+    position: inherit;
+    width: 100%;
+  }
+  #production-title .logo {
+    height: 74px;
+  }
+  #micro-nav {
+    margin-bottom: 100px;
+  }
+  #micro-nav img {
+    width: 100%;
+  }
+  .microclip h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .block {
+    height: 770px;
+    overflow: auto;
+  }
+  .production-title1.logo,
+  .production-title2.logo,
+  .production-bg1,
+  .production-bg2 {
+    height: 74px;
+    width: 100%;
+  }
+  .production-title1.logo {
+    background: url('../images/production-logo1.png') center no-repeat;
+    background-size: contain;
+  }
+  .production-title2.logo {
+    background: url('../images/production-logo2.png') center no-repeat;
+    background-size: contain;
+  }
+  .production-bg1 {
+    background: url('../images/production-bg1.png') right no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+  }
+  .production-bg2 {
+    background: url('../images/production-bg2.png') left no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+  }
+}
+
+/* iPHONE 6 & 6Plus Landscape =================== */
+@media only screen and (min-device-width : 375px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) { 
+/* STYLES GO HERE */
+  .production-title1.logo,
+  .production-title2.logo,
+  .production-bg1,
+  .production-bg2 {
+    background-size: contain;
+    height: 120px;
+  }
+}
+
+
+/* TABLET ============================= */
+@media only screen and (min-device-width: 481px) and (max-device-width: 960px) {
+  #micro-title h1 {
+    font-size: 1.8em;
+    line-height: 1em;
+  }
+  #player {height: 380px;}
+  #microplayer, 
+  #microthumbs {
+    width: 100%;
+  }
+  #microplayer .closebutton {
+    right: 7%;
+  }
+  #production-title .logo {height: 110px;}
+  #micro-nav img {
+    width: 100%;
+  }
+  .block {
+    height: 100%;
+    overflow: auto;
+  }
+
+}
+
+#spot-titles {width:100%;}
+

@@ -1,0 +1,345 @@
+/* MICRO SITE CSS */
+body, h1, h2, h3, h4 {
+  font-family: "Cicle_Semi"; 
+  letter-spacing: 0px;
+}
+
+#container1, #container2, #container3, 
+#container4, #container5, #container6, 
+#container7, #container8, #container9, 
+#container10, #container11, #container12 {
+   display: none;
+   overflow: hidden;
+}
+
+/* MENU DRAWER */
+  #menudrawer{
+    position: absolute;
+    width:600px;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.7);
+    padding: 20px;
+    z-index: 100;
+  }
+  #menudrawer div.menu.sub {
+  	-webkit-backface-visibility: hidden;
+  	-moz-backface-visibility: hidden;
+  	-ms-backface-visibility: hidden;
+  	backface-visibility: hidden;
+  	background-color: #202324;
+  	z-index: -1;
+  	width: 500px;
+  	border: 0;
+  	overflow-x: hidden;
+  	overflow-y: scroll;
+  	-webkit-overflow-scrolling: touch;
+  }
+  #menudrawer div.menu {
+  	height: 100%;
+  	position: absolute;
+  	border-right: 1px solid rgba(0,0,0,.35);
+  }
+
+/* VIDEO NAV */
+  .video-nav img {
+    border: 2px solid #6699cc;
+    margin-top: 10px;
+    width: 160px;
+  }
+  .video-nav li.active img {
+    -moz-box-shadow: 0 0 15px #fff;
+    -webkit-box-shadow: 0 0 15px #fff;
+    box-shadow: 0px 0px 15px #fff;
+  }
+  .video-nav {
+    height: 50px;
+    margin-top: 5px;
+    padding: 0;
+    width: 100%;
+  }
+  .video-nav ul {
+    padding: 0;
+    text-align: center;
+  }
+  .video-nav  li {
+  	display: inline-block;
+  	list-style-type: none;
+  	padding-right: 12px;
+  	padding-left: 12px;
+  	text-transform: uppercase;
+    vertical-align: top;
+  }
+  .video-nav a, .microclip a {
+  	color: #ff5428;
+  	-webkit-transition: color 0.1s ease-in;
+  	text-decoration: none;
+  }
+  .video-nav li.active, 
+  .video-nav a:hover, 
+  .microclip a:active, 
+  .microclip a:hover {
+    color: #acaaaa;
+  }
+  .video-nav h4 {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 6px 0;
+  }
+  .video-nav h4 span {
+    display: block;
+    max-width: 160px;
+  }
+
+/* MICRO ELEMENTS */
+  #microsite {
+    background-color: #d4d4d4;
+    background: url('../images/bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+  }
+
+  #microplayer .sp-video {
+    margin-bottom: 0;
+  }
+  .sp-video {
+    text-align: center;
+  }
+  .sp-video .poster {
+    width: 100%;
+  }
+  #player {
+    width: 100%;
+  }
+  #production-title {
+    color: #fff;
+    height: 50px;
+    margin-left: 0;
+    margin-right: 0px;
+    position: relative;
+    top: 8px;
+    width: 100%;
+  }
+  #production-title h1 {
+    margin-top: 0;
+  }
+
+  #micro-logo {
+    width: 100%
+  }
+
+  #micro-logo img {
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 600px;
+    right: 0;
+    top: -5em;
+    width: 100%
+  }
+    
+  #micro-title {
+    clear:both;
+    font-size: 20pt;
+    position: relative;
+    width: auto;
+  }
+
+  #micro-title h1 {
+    color: #fff !important;
+    line-height: 60px;
+    margin-bottom: 0 !important;
+  }
+
+  #microsite .sp-video {
+    position: relative;
+    top: 15px;
+  }
+    
+  #microthumbs {
+  	border: none;
+    display: inline-block;
+  	padding: 0px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  #microplayer {
+  	background: rgba(0,0,0,.5);
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	border-radius: 10px;
+  	border: 3px solid #3d3d3d;
+  	display: inline-block;
+  	padding: 5px;
+  	vertical-align: middle;
+    width: 100%;
+  }
+
+  #microplayer, 
+  #microthumbs {
+    min-height: 560px;
+  }
+  #micro-nav img {
+    margin: 0px;
+    width: 316px;
+  }
+    
+  #micro-nav .w80 {width: 80%}
+  #micro-nav .w70 {width: 70%}
+  #micro-nav .w100 {width: 100%}
+
+  .microclip {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .microclip a {
+    display:inline;
+  }
+
+  .microclip h4 {
+    background-color: rgba(0,0,0,.5);
+    font-size: 14pt;
+    line-height: 20pt;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  #microplayer .closebutton {
+  	margin-left: 910px;
+  	margin-top: 10px;
+    position: absolute;
+    width: 50px;
+  }
+
+  #player {
+    height: 440px;
+    width: 100%;
+  }
+
+
+
+/* OTHER ELEMENTS */
+  iframe, 
+  .fallback {
+    background-color: #000;
+  	height: 560px;
+  	margin: 0;
+    overflow: hidden;
+  	padding: 0;
+    width: 980px;
+  }
+
+  .container-full {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #spot-titles {
+    width: 100%;
+  }
+
+  #portfolio {
+    margin-top: 200px;
+    width: 100%;
+  }
+  #portfolio.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #portfolio .portfolio-item {
+    margin-bottom: 20px;
+  }
+  #portfolio .portfolio-item img {
+    transition: all 0.3s ease 0s;
+    width: 100%;
+  }
+  .portfolio-item div {
+    border: 1px solid #6699ff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+    background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+  }
+  .portfolio-item div:hover img {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    transform: scale(1.1);
+  }
+
+
+/* ======================== Fancy Box ===========================*/
+.fancybox-iframe body {
+  overflow: hidden !important;
+}
+.fancybox-skin,
+.fancybox-skin iframe,
+html.playerPage body {
+  background: rgba(204,204,204,.3);
+}
+
+
+  /* ANIMATION */
+  .rl_anim .rl_hover,.rl_anim .rl_category{
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+  }
+  .rl_anim-slide .rl_hover .text-wrapper, .rl_anim-slide .rl_hover .icon-wrapper{
+    -webkit-transition: all 0.4s ease .2s;
+    -moz-transition: all 0.4s ease .2s;
+    -ms-transition: all 0.4s ease .2s;
+    -o-transition: all 0.4s ease .2s;
+    transition: all 0.4s ease .2s;
+  }
+  .rl_anim .rl_preview {
+    width: 100%;
+  }
+  .animated.slow {
+    -moz-animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+  }
+  @keyframes pulse {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+  }
+  #micro-logo .animated-rings {
+    animation: pulse 4s linear infinite;
+    left: -10.5em;
+    top: -12em;
+  }
+
+/* =========================== Off-Canvas Menu =================================*/
+#address-container h3 {
+  color: #3399ff;
+}
+#address-container p {
+  color: #fff;
+}
+svg:not(:root) {
+  margin-left: -1em;
+}

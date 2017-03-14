@@ -1,0 +1,13 @@
+{
+  "curly": false,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": true,
+  "globals": {
+    "jQuery": false
+  },
+  "unused": true,
+  "lastsemic": true,
+  "validthis": false,
+  "jquery": false
+}
