@@ -1,0 +1,607 @@
+/* MICRO SITE CSS */
+@font-face {
+    font-family: 'Cicle_Semi';
+    src: url('../fonts/Cicle_Semi-webfont.eot');
+    src: url('../fonts/Cicle_Semi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cicle_Semi-webfont.woff') format('woff'),
+         url('../fonts/Cicle_Semi-webfont.ttf') format('truetype'),
+         url('../fonts/Cicle_Semi-webfont.svg#sofia_pro_lightregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+body, h1, h2, h3, h4 {font-family: "Cicle_Semi"; letter-spacing: 0px;} /*Century Gothic W02*/
+#container1, #container2, #container3, 
+#container4, #container5, #container6, 
+#container7, #container8, #container9, 
+#container10, #container11, #container12 {
+   display:none;
+   overflow: auto;
+}
+
+.pullRight {
+  float: right;
+}
+.pullLeft {
+  float: left;
+}
+.row {
+  margin-left: -16px;
+}
+.clearall{
+  clear: both;
+}
+
+/* MENU DRAWER */
+#menudrawer{
+  position: absolute;
+  width:600px;
+  height:100%;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,.7);
+  padding: 20px;
+  z-index: 100;
+}
+#menudrawer div.menu.sub {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	background-color: #202324;
+	z-index: -1;
+	width: 500px;
+	border: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+#menudrawer div.menu {
+	height: 100%;
+	position: absolute;
+	border-right: 1px solid rgba(0,0,0,.35);
+}
+.video-nav {
+	width: 100%;
+	height: 50px;
+	margin-top: 5px;
+	padding:0;
+}
+.video-nav ul {text-align: center;padding:0;}
+.video-nav  li {
+	display: inline-block;
+	list-style-type: none;
+	padding-right: 12px;
+	padding-left: 12px;
+	text-transform: uppercase;
+}
+.video-nav a, .microclip a {
+	line-height: 2.2em;
+	color: #fff;
+	-webkit-transition: color 0.1s ease-in;
+	text-decoration: none;
+}
+.video-nav li.active, .video-nav a:hover, .microclip a:active, .microclip a:hover {color: #acaaaa;}
+.video-nav h4 {font-size: 20px;margin: 6px 0;line-height:30pt;}
+.block {
+	position:fixed;
+	text-align:center;
+	height: 583px;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+#microsite {
+  background: url("../images/bg.jpg");
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center top;
+  height: 100%;
+  left:0px;
+  position:fixed;
+  top:0px;
+  width: 100%;
+  z-index:-1;
+}
+
+#microplayer .sp-video {margin-bottom: 0;}
+.sp-video {text-align: center;}
+#player {width: 100%;}
+#microplayer .sp-video #production-title {
+  position: relative;
+  float:right;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 45%;
+  height: 90px;
+  margin-left:0;
+  margin-right:10px;
+  top:8px;
+}
+
+#micro-logo {
+    background: url("images/seismic-logo.png") center no-repeat;
+    background-size: contain;
+    height: 96px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+}
+  
+#micro-title {
+  clear:both;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  width: auto;
+}
+
+#micro-title h1 {
+  color: #fff !important;
+  margin-bottom: 0 !important;
+  margin-top: 10px;
+  line-height: 32px;
+}
+
+#microsite .sp-video {
+  top: 15px;
+  position: relative;
+}
+  
+#microplayer, 
+#microthumbs {
+	background: rgba(0,0,0,.8);
+	/*
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+  */
+  margin-bottom: 100px;
+  margin-top: 20px;
+  min-height: 536px;
+	max-width: 960px;
+	padding: 1%;
+	display: inline-block;
+  width: 98%;
+}
+
+#microplayer {
+  display:none;
+}
+#micro-nav img {
+  width: 100%;
+  margin: 0px;
+}
+#micro-nav {
+  position: relative;
+  height: auto;
+  padding: 5px;
+}
+  
+#micro-nav .w80 {width: 80%}
+#micro-nav .w70 {width: 70%}
+#micro-nav .w100 {width: 100%}
+
+.microclip {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align:center;
+  /*min-height: 132px;*/
+  vertical-align: top;
+}
+
+.microclip a {
+  display:inline;
+}
+
+.microclip h4 {
+  font-size: 0.9em;
+  line-height: 1em;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+  
+.microclip img {border: 1px solid #ccc;}
+
+#microplayer .closebutton {
+	position: relative;
+	margin-top: -28px;
+  text-align: right;
+  width: 102.5%;
+}
+
+.row.no-gutters div {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#player {height: 484px;width: 100%;}
+
+.production-title.logo {
+  height: auto;
+  margin-top: 20px;
+  width: 100%
+}
+.production-title.logo img {
+  max-width: 450px;
+  width: 80%;
+}
+.production-bg1,
+.production-bg2 {
+  bottom: 0;
+  height: 100%;
+  position: fixed;
+  z-index: -10;
+}
+.production-bg1 {
+  left: 0;
+}
+.production-bg2 {
+  right: 0;
+}
+#spot-images {
+  bottom: 0;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+}
+#spot-titles {width:100%;}
+.overlay-img {
+  -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    animation-duration: 2s;
+  max-height: 350px;
+}
+.overlay-img.one {
+  -webkit-animation-delay: 20ms; /* Chrome, Safari, Opera */
+    animation-delay: 20ms;
+    float: left;
+}
+.overlay-img.two {
+  -webkit-animation-delay: 40ms; /* Chrome, Safari, Opera */
+    animation-delay: 40ms;
+    float: right;
+}
+
+.col:not(:first-child,:last-child) {
+  padding-right:7px;
+  padding-left:7px;
+}
+
+iframe, .fallback {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	overflow: hidden;
+}
+
+#loading {
+  display: none;
+  font-size: 2em;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
+}
+
+.w80 {width: 80%}
+.w70 {width: 70%}
+.w100 {width: 100%}
+
+/* Small Laptop ========================== */
+@media only screen and (max-width: 767px) {
+  .block {
+    height: 100%;
+    overflow: scroll;
+  }
+  .overlay-img.two {
+    margin-right: -31px;
+  }
+  #spot-images {
+    position: relative;
+  }
+}
+
+/* iPhone5 =============================== */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  #micro-title h1 {
+    font-size: 1.3em;
+    line-height: 1em;
+  }
+  #microplayer, 
+  #microthumbs {
+    padding: 3%;
+    width: 100%;
+  }
+  #microthumbs {
+    height: 1000px;
+    margin-bottom: 10px;
+  }
+   #microplayer .closebutton {
+    right: -1%;
+  }
+  #micro-logo, 
+  #microplayer .sp-video #production-title {
+    width: 100%
+  }
+  #micro-title {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  #production-title .logo {
+    height: 74px;
+  }
+  #micro-nav img {
+    width: 100%;
+  }
+  .microclip h4 {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .block {
+    height: 100%;
+    overflow: auto;
+    z-index: -1;
+  }
+  .overlay-img {
+    max-height: 176px;
+  }
+  #player {
+    height: auto;
+  }
+  .left-grid,
+  .right-grid {
+    float: right;
+  }
+  .center-grid {
+    float: left;
+  }
+  .overlay-img.two {
+    margin-right: -31px;
+  }
+  #spot-images {
+    position: relative;
+  }
+}
+
+/* Galaxy S5 PORTRAIT ================================*/
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (orientation : portrait) {
+  .block {
+    height: 100%;
+  }
+  .overlay-img {
+    max-height: 176px;
+  }
+  .overlay-img.two {
+    margin-right: -31px;
+  }
+  #spot-images {
+    position: relative;
+  }
+}
+
+/* iPhone6 & 6Plus ================================*/
+@media only screen and (min-width: 375px) and (max-device-width: 736px) {
+  #micro-title h1 {
+    font-size: 1.8em;
+    line-height: 1em;
+  }
+  #microplayer, 
+  #microthumbs {
+    padding: 3%;
+    width: 100%;
+  }
+  #microthumbs {
+    height: 1100px;
+    margin-bottom: 10px;
+  }
+  #microplayer .closebutton {
+    right: -1%;
+  }
+  #player {
+    height: 180px;
+  }
+  #micro-logo, 
+  #microplayer .sp-video #production-title {
+    margin-top: 0;
+    position: inherit;
+    width: 100%;
+  }
+  #microplayer {
+    min-height: 0;
+  }
+  #production-title .logo {
+    height: 74px;
+  }
+  #micro-nav img {
+    width: 100%;
+  }
+  .microclip h4 {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  .production-bg1 {
+    background: url('../images/production-bg1.png') right no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+  }
+  .production-bg2 {
+    background: url('../images/production-bg2.png') left no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+  }
+  .block {
+    height: 100%;
+    overflow: auto;
+  }
+  
+}
+
+/* iPhone 6Plus PORTRAIT ================================*/
+@media only screen and (min-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {
+  .block {
+    height: 100%;
+  }
+  #microthumbs {
+    height: 1140px;
+  }
+    .overlay-img {
+    max-height: 212px;
+  }
+  .overlay-img.two {
+    margin-right: -31px;
+  }
+  #spot-images {
+    position: relative;
+  }
+}
+
+/* iPHONE 6 & 6Plus Landscape =================== */
+@media only screen and (min-width : 375px) and (max-device-width : 736px) and (orientation : landscape) { 
+  #microthumbs {
+    float: right;
+    width: 60%;
+  }
+  .row {
+    margin-left: -9px;
+    margin-right: -9px;
+  }
+  .overlay-img {
+    bottom: 0;
+    max-height: 188px;
+    position: absolute;
+  }
+  .overlay-img.one {
+    left: -6px;
+  }
+  .overlay-img.two {
+    left: 17%;
+    z-index: 10;
+  }
+  .overlay-img.three {
+    right: 0;
+  }
+  #microthumbs {
+    height: 1300px;
+  }
+  .block {
+    height: 500px;
+    overflow: auto;
+  }
+  .production-title.logo {
+    float: left;
+    margin-top: 4%;
+    position: fixed;
+    text-align: left;
+    width: 46%;
+    z-index: -1;
+  }
+  #spot-images {
+    position: fixed;
+    width: 96%;
+    z-index: -1;
+  }
+  #microplayer {
+    min-height: 355px;
+    width: 80%;
+  }
+  #microplayer .closebutton {
+    right: 9%;
+  }
+}
+/* iPhone5 Landscape ================================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 320px) and (orientation: landscape) {
+  .overlay-img {
+    bottom: 0;
+    max-height: 133px;
+    position: absolute;
+  }
+  .overlay-img.one {
+    left: -6px;
+  }
+  .overlay-img.two {
+    left: 17%;
+    z-index: 10;
+  }
+  .overlay-img.three {
+    right: 0;
+  }
+  #spot-images {
+    width: 102%;
+}
+
+
+/* TABLET ============================= */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #micro-title h1 {
+    font-size: 1.8em;
+    line-height: 1em;
+  }
+  #player {
+    height: 380px;
+  }
+  #microplayer, 
+  #microthumbs {
+    height: 536px;
+    padding: 3%;
+    width: 100%;
+  }
+  #microplayer .closebutton {
+    right: 1%;
+  }
+  #production-title .logo {
+    height: 110px;
+  }
+  #micro-nav img {
+    width: 100%;
+  }
+  .block {
+    height: 100%;
+    overflow: auto;
+  }
+  .overlay-img {
+    max-height: 168px;
+  }
+
+}
+
+/* Tablet (Portrait) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #microplayer,
+  #microthumbs {
+    height: 700px;
+    width: 100%;
+  }
+  .microclip:nth-of-type(7) {
+    margin-left: 15.5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .overlay-img {
+    max-height: 450px;
+  }
+}
+@media only screen and (min-device-width: 1441px) {
+  #microplayer,
+  #microthumbs {
+    margin-top: 240px;
+  }
+}
+
+
